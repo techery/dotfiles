@@ -1,0 +1,26 @@
+[alias]
+  co = checkout
+[color]
+  status = true
+  branch = true
+  diff = true
+  grep = true
+  log = true
+  ui = true
+  interactive = true
+[core]
+  excludesfile = ~/.gitignore
+	editor = vim
+  autocrlf = input
+[apply]
+  whitespace = nowarn
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[commit]
+  template = ~/.gitmessage
+[include]
+  path = ~/.dotfiles/local/gitconfig
