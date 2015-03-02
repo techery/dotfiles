@@ -12,5 +12,8 @@ fi
 
 source ~/.path
 
+# Set rbenv to Hombrew's var/rbenv directory
+export RBENV_ROOT=$(brew --prefix)/var/rbenv
+
 # Local config
 [[ -f ~/.dotfiles/local/zshenv ]] && source ~/.dotfiles/local/zshenv
